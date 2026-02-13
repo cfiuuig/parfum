@@ -171,6 +171,10 @@ body {
     margin-bottom: clamp(1rem, 0.435rem + 2.82vw, 2.5rem);
 }
 
+.mobil{
+    display: none;
+}
+
 .collection__desk {
     margin-bottom: clamp(1.875rem, 0.699rem + 5.88vw, 5rem);
     font-weight: 500;
@@ -206,7 +210,6 @@ body {
 .collection__img img {
     width: 100%;
     height: auto;
-    margin: 56px 0;
 }
 
 

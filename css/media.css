@@ -1,16 +1,12 @@
-@media screen and (max-width:1170px) {
-    .parfum {
-        width: 100svh;
-        width: 100svh;
-    }
-}
-
 @media screen and (max-width:1300px) {
     .header__nav-list {
         display: flex;
         gap: 50px;
     }
 }
+
+
+
 
 @media screen and (max-width:750px) {
     .footer__nav {
@@ -72,7 +68,7 @@
 
     .burger span:nth-child(2) {
         top: clamp(0.625rem, 0.42rem + 1.03vw, 0.875rem);
-        
+
     }
 
     .burger span:nth-child(3) {
@@ -112,6 +108,45 @@
         display: flex;
     }
 
+
+
+
+
+    /* 📱 МОБИЛЬНАЯ ВЕРСИЯ */
+
+
+    .collection__item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .collection__img img {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .collection__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .collection__desk {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .collection__img {
+        order: -1;
+        /* картинка станет первой */
+    }
 }
 
 @media (max-width: 378px) {
