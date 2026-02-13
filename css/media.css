@@ -1,0 +1,121 @@
+@media screen and (max-width:1170px) {
+    .parfum {
+        width: 100svh;
+        width: 100svh;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .header__nav-list {
+        display: flex;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .footer__nav {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(1.875rem, 0.48rem + 6.98vw, 3.75rem);
+    }
+
+    .footer__section a,
+    p {
+        text-align: center;
+    }
+
+    .footer__bottom {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__bottom-desc::after {
+        position: absolute;
+        left: 15%;
+        width: 70%;
+
+    }
+}
+
+@media (max-width: 710px) {
+
+    .header {
+        padding: 0 0;
+    }
+
+    .header__nav-list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        flex-direction: column;
+        width: clamp(1.25rem, 0.327rem + 4.62vw, 2.375rem);
+        height: clamp(1.75rem, 1.545rem + 1.03vw, 2rem);
+        position: relative;
+        cursor: pointer;
+    }
+
+    .burger span {
+        position: absolute;
+        width: 100%;
+        height: clamp(0.25rem, 0.147rem + 0.51vw, 0.375rem);
+        background: #f0f0f0;
+        left: 0;
+        transition: 0.3s;
+        border: 10px;
+    }
+
+    .burger span:nth-child(1) {
+        top: 0;
+    }
+
+    .burger span:nth-child(2) {
+        top: clamp(0.625rem, 0.42rem + 1.03vw, 0.875rem);
+        
+    }
+
+    .burger span:nth-child(3) {
+        top: clamp(1.25rem, 0.84rem + 2.05vw, 1.75rem);
+    }
+
+    #burger-toggle:checked+.burger span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    #burger-toggle:checked+.burger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #burger-toggle:checked+.burger span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    .menu-mobile {
+        display: none;
+        gap: clamp(0.5rem, -1rem + 7.5vw, 1.25rem);
+        padding: 2px 0;
+        position: absolute;
+        top: 76px;
+        right: 0;
+        background: #2D2D2D;
+        margin: 0 auto;
+        max-width: 710px;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    #burger-toggle:checked~.menu-mobile {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 378px) {
+    .header__nav-actions {
+        flex-direction: column;
+    }
+}

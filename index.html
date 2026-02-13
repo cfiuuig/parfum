@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>SPIRIT</title>
 </head>
 
@@ -13,6 +14,23 @@
     <header class="header">
         <div class="container">
             <nav class="header__nav">
+                <!-- бургер (мобилка) -->
+                <input type="checkbox" id="burger-toggle">
+
+                <label for="burger-toggle" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+
+                <!-- мобильное меню -->
+                <nav class="menu-mobile">
+                    <a href="#" class="header__nav-item">Home</a>
+                    <a href="#" class="header__nav-item color-text">About US</a>
+                    <a href="#" class="header__nav-item color-text">Collection</a>
+                </nav>
+
                 <a href="#" class="header__nav-logo">SPIRIT</a>
 
                 <ul class="header__nav-list">
@@ -21,8 +39,8 @@
                     <li><a href="#" class="header__nav-item color-text">Collection</a></li>
                 </ul>
                 <div class="header__nav-actions">
-                    <a href="#" class="header__nav-icon"><img src="img/SEARCH.png" alt=""></a>
-                    <a href="#" class="header__nav-icon"><img src="img/korzina.png" alt=""></a>
+                    <a href="#" class="header__nav-icon"><img src="img/SEARCH.svg" alt=""></a>
+                    <a href="#" class="header__nav-icon"><img src="img/korzina.svg" alt=""></a>
                 </div>
             </nav>
         </div>
@@ -33,7 +51,7 @@
     <section class="parfume">
         <div class="container parfume__section">
             <h1 class="parfume__title">PERFUME LINE</h1>
-            <a href="#" class="parfume__link">LEARN MORE</a>
+            <button class="parfume__btn">LEARN MORE</button>
         </div>
     </section>
 
@@ -71,7 +89,7 @@
                             feel and inspire.
                             Light and airy, warm and spicy, sensual and sophisticated — each scent reveals itself in its
                             own way, highlighting natural beauty and individuality.</p>
-                        <a href="#" class="collection__link">Discover</a>
+                        <button class="collection__btn">Discover</button>
                     </div>
                     <div class="collection__img">
                         <img src="img/reklam1.png" alt="">
@@ -86,8 +104,7 @@
                             detail, and expression.
                             Fresh and woody, spicy and leathery, bold and multi-layered — each scent is crafted to
                             highlight individuality and leave a lasting impression.</p>
-                        <a href="#" class="collection__link">Discover</a>
-
+                        <button class="collection__btn">Discover</button>
                     </div>
                     <div class="collection__img">
                         <img src="img/reklam2.png" alt="">
@@ -101,19 +118,31 @@
     <!-- footer-start  -->
     <footer class="footer">
         <div class="container">
-            <nav class="header__nav footer__nav">
-                <a href="#" class="header__nav-logo">SPIRIT</a>
-
-                <ul class="header__nav-list">
-                    <li><a href="#" class="header__nav-item">Home</a></li>
-                    <li><a href="#" class="header__nav-item color-text">About US</a></li>
-                    <li><a href="#" class="header__nav-item color-text">Collection</a></li>
-                </ul>
-                <div class="header__nav-actions">
-                    <a href="#" class="header__nav-icon"><img src="img/SEARCH.png" alt=""></a>
-                    <a href="#" class="header__nav-icon"><img src="img/korzina.png" alt=""></a>
+            <nav class=" footer__nav">
+                <div class="footer__section">
+                    <a href="#" class="footer__nav-logo">SPIRIT</a>
+                    <p class="footer__nav-desc">Luxury fragrances that <br>
+                        speak for you.</p>
+                </div>
+                <div class="div">
+                    <ul class="footer__nav-list">
+                        <h4 class="footer__nav-item-title">Navigation</h4>
+                        <li><a href="#" class="footer__nav-item">Home</a></li>
+                        <li><a href="#" class="footer__nav-item ">About US</a></li>
+                        <li><a href="#" class="footer__nav-item ">Collection</a></li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <h4 class="footer__nav-item-title">Social</h4>
+                        <li><a href="#" class="footer__nav-item">Instagram</a></li>
+                        <li><a href="#" class="footer__nav-item">Facebook</a></li>
+                        <li><a href="#" class="footer__nav-item">Telegram</a></li>
+                    </ul>
                 </div>
             </nav>
+            <div class="footer__bottom">
+                <p class="footer__bottom-desc">© 2026 SPIRIT</p>
+            </div>
+
         </div>
     </footer>
 
