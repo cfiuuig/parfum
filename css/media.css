@@ -94,11 +94,10 @@
         gap: clamp(0.5rem, -1rem + 7.5vw, 1.25rem);
         padding: 2px 0;
         position: absolute;
-        top: 76px;
+        top: clamp(4rem, 3.795rem + 1.03vw, 4.25rem);
         right: 0;
         background: #2D2D2D;
         margin: 0 auto;
-        max-width: 710px;
         width: 100%;
         justify-content: center;
 
@@ -107,13 +106,6 @@
     #burger-toggle:checked~.menu-mobile {
         display: flex;
     }
-
-
-
-
-
-    /* 📱 МОБИЛЬНАЯ ВЕРСИЯ */
-
 
     .collection__item {
         flex-direction: column;
@@ -149,8 +141,13 @@
     }
 }
 
+
 @media (max-width: 378px) {
     .header__nav-actions {
         flex-direction: column;
+    }
+
+    .menu-mobile {
+        top: 74px;
     }
 }
