@@ -137,7 +137,7 @@ body {
     max-width: 923px;
     margin: clamp(1.25rem, 0.779rem + 2.35vw, 2.5rem) auto clamp(2.5rem, 1.088rem + 7.06vw, 6.25rem);
     font-size: clamp(0.875rem, 0.734rem + 0.71vw, 1.25rem);
-    line-height: clamp(1.125rem, 0.607rem + 2.59vw, 25rem);
+    line-height: clamp(1.125rem, 0.607rem + 2.59vw, 2.5rem);
     text-align: center;
     display: -webkit-box;
     -webkit-line-clamp: 6;
